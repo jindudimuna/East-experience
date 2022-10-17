@@ -1,0 +1,121 @@
+body {
+  box-sizing: border-box;
+}
+
+.nav-bar {
+  display: flex;
+  width: 100%;
+  background-color: #ef3340;
+}
+
+.Company {
+  color: #ffffff;
+  font-family: "Mochiy Pop One", sans-serif;
+  font-weight: 100;
+  font-size: 1.1em;
+  display: flex;
+  justify-content: center;
+  margin-right: auto;
+  margin-left: 6%;
+  width: 352px;
+  text-decoration: none;
+}
+
+.nav-items {
+  display: flex;
+  list-style: none;
+  gap: 15%;
+  align-items: center;
+  font-family: "Prompt";
+  margin-left: 40%;
+}
+
+.nav-items a {
+  text-decoration: none;
+  color: white;
+  font-family: "Mochiy Pop One", sans-serif;
+  font-weight: 100;
+  font-size: 1em;
+}
+
+.Hero {
+  background-image: url(./assets/home-hero.jpg);
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 0;
+}
+
+.Hero-welcome {
+  font-family: "Montserrat", sans-serif;
+  color: #ffffff;
+  font-size: 5em;
+  font-weight: 200;
+  width: 660px;
+  margin-top: 8%;
+}
+
+.hero-text-1 {
+  display: flex;
+  justify-content: center;
+  margin-left: 15%;
+}
+
+.hero-info {
+  font-family: "Montserrat", sans-serif;
+  color: #ffffff;
+  font-size: 1.2em;
+  font-weight: 200;
+  width: 460px;
+}
+
+.destination-link {
+  font-family: "Montserrat", sans-serif;
+  color: #ffffff;
+  font-size: 1.2em;
+  font-weight: 200;
+  width: 460px;
+  text-decoration: none;
+}
+
+.fa-solid {
+  color: #ffffff;
+  font-size: 1em;
+  width: 80px;
+}
+
+.hero-text-2 {
+  display: flex;
+  justify-content: space-around;
+}
+
+.second {
+  margin-top: 5%;
+}
+
+section {
+  margin-top: 10%;
+}
+
+.banners {
+  width: 413px;
+}
+
+#destination {
+  display: flex;
+  flex-wrap: no-wrap;
+  overflow-x: auto;
+  gap: 5%;
+}
+
+.tile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.location {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1em;
+  font-weight: 600;
+}
