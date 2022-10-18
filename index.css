@@ -1,24 +1,24 @@
 body {
-  background-image: url(./assets/Background-image.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
+  box-sizing: border-box;
 }
 
 .nav-bar {
   display: flex;
   width: 100%;
+  background-color: #ef3340;
 }
 
 .Company {
   color: #ffffff;
   font-family: "Mochiy Pop One", sans-serif;
   font-weight: 100;
-  font-size: 1.6em;
+  font-size: 1.1em;
   display: flex;
   justify-content: center;
   margin-right: auto;
   margin-left: 6%;
   width: 352px;
+  text-decoration: none;
 }
 
 .nav-items {
@@ -26,7 +26,6 @@ body {
   list-style: none;
   gap: 15%;
   align-items: center;
-  font-family: "Prompt";
   margin-left: 40%;
 }
 
@@ -38,30 +37,44 @@ body {
   font-size: 1em;
 }
 
-.Hero-text {
+.Hero {
+  background-image: url(./assets/home-hero.jpg);
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 0;
+}
+
+.Hero-welcome {
   font-family: "Montserrat", sans-serif;
   color: #ffffff;
   font-size: 5em;
   font-weight: 200;
-  width: 624px;
+  width: 660px;
+  margin-top: 8%;
 }
 
-.Hero {
-  margin-left: 6%;
+.hero-text-1 {
+  display: flex;
+  justify-content: center;
+  margin-left: 15%;
 }
 
-.info {
-  margin-top: 300px;
-  margin-bottom: 8%;
-}
-
-.info-text {
+.hero-info {
   font-family: "Montserrat", sans-serif;
   color: #ffffff;
-  font-size: 1.1em;
+  font-size: 1.2em;
   font-weight: 200;
-  width: 430px;
-  margin-top: 1%;
+  width: 460px;
+}
+
+.destination-link {
+  font-family: "Montserrat", sans-serif;
+  color: #ffffff;
+  font-size: 1.2em;
+  font-weight: 200;
+  width: 460px;
+  text-decoration: none;
 }
 
 .fa-solid {
@@ -70,22 +83,140 @@ body {
   width: 80px;
 }
 
-.explore {
-  font-family: "Montserrat", sans-serif;
-  color: #ffffff;
-  font-size: 1.5em;
-  font-weight: 200;
-  text-decoration: none;
-  width: 322px;
+.hero-text-2 {
+  display: flex;
+  justify-content: space-around;
 }
 
-.info {
+.second {
+  margin-top: 5%;
+}
+
+.reviews-heading,
+.about-heading {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.6em;
+  font-weight: 600;
+  text-align: center;
+  margin-top: 5%;
+}
+
+#about {
+  display: flex;
+  justify-content: center;
+}
+
+.about-us {
+  font-family: "Montserrat", sans-serif;
+  color: black;
+  font-size: 1.6em;
+  font-weight: 200;
+  width: 760px;
+  text-align: center;
+}
+.quote-mark {
+  font-size: 3.5em;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  color: #ef3340;
+  font-style: italic;
+}
+
+.review-item {
+  width: 320px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.2em;
+  font-weight: 500;
+  margin-bottom: 15%;
+  margin-top: 2%;
+}
+
+#reviews {
+  display: flex;
+  flex-wrap: no-wrap;
+  justify-content: center;
+  overflow-x: auto;
+  gap: 10%;
+  margin-top: 2%;
+  margin-left: 2%;
+  margin-bottom: 5%;
+}
+
+.quotes {
+  box-shadow: #00000026 1.95px 1.95px 2.6px;
+}
+
+.footer-items a {
+  text-decoration: none;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 100;
+  font-size: 1em;
+}
+.footer-items li {
+  list-style: none;
+  margin-top: 5%;
+}
+
+.footer-items {
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+}
+
+.foot-links-1 {
+  margin-top: 10%;
+  background-color: #ef3340;
+  height: 60vh;
+}
+
+.legal {
+  display: flex;
+  justify-content: center;
+}
+.bottom-links {
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.8em;
+  color: white;
+}
+
+.r-items {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1em;
+  color: white;
+  width: 250px;
+}
+
+.field {
+  width: 67%;
+  padding-top: 6px;
+  padding-bottom: 6px;
+}
+
+.socials a {
+  text-decoration: none;
+  color: white;
+}
+
+.socials li {
+  list-style: none;
+}
+
+ul.socials {
+  display: flex;
+  gap: 2%;
+}
+
+.footer-section {
   display: flex;
   justify-content: space-between;
-  align-content: center;
 }
 
-.explore-more {
-  margin-top: 7%;
-  margin-right: 15%;
+.l-side,
+.r-side {
+  margin-top: 5%;
+}
+
+footer {
+  background-color: #ef3340;
 }

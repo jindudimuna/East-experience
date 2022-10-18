@@ -39,7 +39,7 @@ body {
 }
 
 .Hero {
-  background-image: url(./assets/home-hero.jpg);
+  background-image: url(./assets/Background-image.jpg);
   height: 100vh;
   background-repeat: no-repeat;
   background-size: cover;
@@ -57,42 +57,35 @@ body {
 
 .hero-text-1 {
   display: flex;
-  justify-content: center;
-  margin-left: 15%;
-}
 
-.hero-info {
+  margin-left: 10%;
+}
+.info-text {
   font-family: "Montserrat", sans-serif;
   color: #ffffff;
-  font-size: 1.2em;
-  font-weight: 200;
-  width: 460px;
+  font-size: 1.1em;
+  font-weight: 500;
+  width: 430px;
+  margin-top: 15%;
 }
 
-.destination-link {
+.info-text-2 {
   font-family: "Montserrat", sans-serif;
   color: #ffffff;
-  font-size: 1.2em;
-  font-weight: 200;
-  width: 460px;
-  text-decoration: none;
+  font-size: 1.1em;
+  font-weight: 500;
+  width: 430px;
+  margin-top: 22%;
 }
 
-.fa-solid {
-  color: #ffffff;
-  font-size: 1em;
-  width: 80px;
-}
-
-.hero-text-2 {
+.info {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  align-content: center;
+  margin-left: 10%;
+  margin-right: 2%;
+  margin-top: 2%;
 }
-
-.second {
-  margin-top: 5%;
-}
-
 section {
   margin-top: 10%;
 }
@@ -169,4 +162,80 @@ section {
 .action {
   margin-top: 5%;
   text-align: center;
+  margin-bottom: 10%;
+}
+
+.footer-items a {
+  text-decoration: none;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 100;
+  font-size: 1em;
+}
+.footer-items li {
+  list-style: none;
+  margin-top: 5%;
+}
+
+.footer-items {
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+}
+
+.foot-links-1 {
+  margin-top: 10%;
+  background-color: #ef3340;
+  height: 60vh;
+}
+
+.legal {
+  display: flex;
+  justify-content: center;
+}
+.bottom-links {
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.8em;
+  color: white;
+}
+
+.r-items {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1em;
+  color: white;
+  width: 250px;
+}
+
+.field {
+  width: 67%;
+  padding-top: 6px;
+  padding-bottom: 6px;
+}
+
+.socials a {
+  text-decoration: none;
+  color: white;
+}
+
+.socials li {
+  list-style: none;
+}
+
+ul.socials {
+  display: flex;
+  gap: 2%;
+}
+
+.footer-section {
+  display: flex;
+  justify-content: space-between;
+}
+
+.l-side,
+.r-side {
+  margin-top: 5%;
+}
+
+footer {
+  background-color: #ef3340;
 }
