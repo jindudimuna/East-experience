@@ -174,10 +174,11 @@ body {
   display: flex;
   justify-content: center;
 }
-.bottom-links {
+.bottom-links a {
   font-family: "Montserrat", sans-serif;
   font-size: 0.8em;
   color: white;
+  text-decoration: none;
 }
 
 .r-items {
