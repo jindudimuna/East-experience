@@ -5,7 +5,7 @@ body {
 .nav-bar {
   display: flex;
   width: 100%;
-  background-color: #ef3340;
+  background-color: #a10101;
 }
 
 .Company {
@@ -103,7 +103,8 @@ body {
 
 #about {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 .about-us {
@@ -131,9 +132,14 @@ body {
   margin-top: 2%;
 }
 
-#reviews {
+.name {
+  font-family: "Mochiy Pop One", sans-serif;
+  font-weight: 100;
+  font-size: 0.8em;
+}
+
+#reviews-square {
   display: flex;
-  flex-wrap: no-wrap;
   justify-content: center;
   overflow-x: auto;
   gap: 10%;
@@ -162,12 +168,6 @@ body {
   width: 250px;
   display: flex;
   flex-direction: column;
-}
-
-.foot-links-1 {
-  margin-top: 10%;
-  background-color: #ef3340;
-  height: 60vh;
 }
 
 .legal {
@@ -219,5 +219,5 @@ ul.socials {
 }
 
 footer {
-  background-color: #ef3340;
+  background-color: #a10101;
 }
