@@ -1,3 +1,5 @@
+/* Home page */
+
 body {
   box-sizing: border-box;
 }
@@ -10,7 +12,8 @@ body {
 
 .Company {
   color: #ffffff;
-  font-family: "Mochiy Pop One", sans-serif;
+  font-family: "Roboto", sans-serif;
+
   font-weight: 100;
   font-size: 1.1em;
   display: flex;
@@ -33,13 +36,18 @@ body {
 .nav-items a {
   text-decoration: none;
   color: white;
-  font-family: "Mochiy Pop One", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 100;
   font-size: 1em;
 }
 
+.nav-items a:hover {
+  text-decoration: underline;
+}
+
 .Hero {
   background-image: url(./assets/Background-image.jpg);
+  /* tori gate digital wallpaper, shrine, water, mountains, clouds, HD wallpaper(2020). Available at HD wallpaper: tori gate digital wallpaper, shrine, water, mountains, clouds | Wallpaper Flare (accessed: 23 October 2022). */
   height: 100vh;
   background-repeat: no-repeat;
   background-size: cover;
@@ -64,20 +72,24 @@ body {
   font-family: "Montserrat", sans-serif;
   color: #ffffff;
   font-size: 1.1em;
-  font-weight: 500;
-  width: 430px;
-  margin-top: 15%;
+  font-weight: 200;
+  width: 330px;
+  text-align: left;
+  margin-top: 18%;
 }
 
 .info-text-2 {
-  font-family: "Montserrat", sans-serif;
-  color: #ffffff;
-  font-size: 1.1em;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.2em;
   font-weight: 500;
   width: 430px;
   margin-top: 22%;
+  color: #ffffff;
 }
-
+.info-text-2 a {
+  text-decoration: none;
+  color: #ffffff;
+}
 .info {
   display: flex;
   justify-content: space-between;
@@ -159,7 +171,23 @@ section {
 .action {
   margin-top: 5%;
   text-align: center;
-  margin-bottom: 10%;
+  padding-bottom: 5%;
+}
+
+.more-info {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  padding-bottom: 5%;
+}
+.ninja {
+  width: 5%;
+}
+.find-more {
+  color: black;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.8em;
 }
 
 .footer-items a {
@@ -236,4 +264,141 @@ ul.socials {
 
 footer {
   background-color: #a10101;
+}
+
+.credits {
+  font-size: 0.6em;
+  color: #434040;
+}
+
+/* about page */
+
+.Hero-2 {
+  background-image: url(./assets/home-hero.jpg);
+  /* https://www.wallpaperflare.com/mount-fuji-japan-nature-mountains-landscape-scenics-nature-wallpaper-suleu/download */
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 0;
+}
+
+.Hero-welcome-2 {
+  font-family: "Montserrat", sans-serif;
+  color: #ffffff;
+  font-size: 5em;
+  font-weight: 200;
+  width: 300px;
+  margin-top: 8%;
+  text-align: right;
+}
+
+.hero-text-a {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 10%;
+}
+
+.hero-info {
+  font-family: "Montserrat", sans-serif;
+  color: #ffffff;
+  font-size: 1.2em;
+  font-weight: 500;
+  width: 300px;
+  text-align: left;
+  margin-left: 15%;
+}
+
+.hero-info-2 {
+  font-family: "Montserrat", sans-serif;
+  color: #ffffff;
+  font-size: 1em;
+  font-weight: 500;
+  width: 400px;
+  text-align: left;
+  margin-left: 15%;
+}
+
+.destination-link {
+  font-family: "Montserrat", sans-serif;
+  color: #ffffff;
+  font-size: 1.2em;
+  font-weight: 500;
+  width: 460px;
+  text-decoration: none;
+}
+
+.fa-solid {
+  color: #ffffff;
+  font-size: 1em;
+  width: 80px;
+}
+
+.hero-text-2 {
+  display: flex;
+  flex-direction: column;
+  margin-top: 5%;
+}
+
+.second {
+  margin-top: 5%;
+}
+
+.reviews-heading,
+.about-heading {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.6em;
+  font-weight: 600;
+  text-align: center;
+  margin-top: 5%;
+}
+
+#about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about-us {
+  font-family: "Montserrat", sans-serif;
+  color: black;
+  font-size: 1.6em;
+  font-weight: 200;
+  width: 760px;
+  text-align: center;
+}
+.quote-mark {
+  font-size: 3.5em;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  color: #ef3340;
+  font-style: italic;
+}
+
+.review-item {
+  width: 320px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.2em;
+  font-weight: 500;
+  margin-bottom: 15%;
+  margin-top: 2%;
+}
+
+.name {
+  font-family: "Mochiy Pop One", sans-serif;
+  font-weight: 100;
+  font-size: 0.8em;
+}
+
+#reviews-square {
+  display: flex;
+  justify-content: center;
+  overflow-x: auto;
+  gap: 10%;
+  margin-top: 2%;
+  margin-left: 2%;
+  margin-bottom: 5%;
+}
+
+.quotes {
+  box-shadow: #00000026 1.95px 1.95px 2.6px;
 }
