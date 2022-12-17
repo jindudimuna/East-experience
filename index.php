@@ -1,44 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
-<!-- css -->
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <!-- Google fonts -->
- 
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;1,500&display=swap" rel="stylesheet">        <!-- font awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer">
-
-</head>
-<body>
-
-    <header>
-
-        <nav class="nav-bar">
-            <div class="logo">
-                <h1 ><a class="Company" href="index.html">East Experience</a></h1>
-                <!-- closing tag for Company -->
-            </div>
-        
-        
-           
-                <ul class="nav-items">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="Design-Notes.pdf" target="_blank">Wireframes</a></li>
-                    <li><a href="CREDITS.pdf">Credits</a></li>
-                </ul>
-        
-        
-        <!-- closing tag for nav section -->
-        </nav>
-            </header>
-
+<?php
+include 'header.php';
+?>
 
 
             <div class="Hero">
@@ -148,44 +110,6 @@
                 <a href="about.html" class="find-more">WHO WE ARE</a>
                 <img src="https://img.icons8.com/material/96/000000/ninja-head.png" class="ninja" alt="ninja">
             </div>
-            
-<footer>
-
-
-    <div class="footer-section">
-        <div class="l-side">
-            <ul class="footer-items">
-                <li><a href="">FAQ</a></li>
-                <li><a href="">HISTORY</a></li>
-                <li><a href="">GALLERY</a></li>
-                <li><a href="">UPCOMING TOURS</a></li>
-                <li><a href="">COVID-19 UPDATES</a></li>
-               </ul>
-          <!-- closing tag for l-side div -->
-            </div>
-
-            <div class="r-side">
-                <p class="r-items">SUBSCRIBE TO OUR NEWS LETTER</p>
-                <form>
-                    <input type="email" name="email" placeholder="email address" class="field">
-                </form>
-                <p class="r-items">FOLLOW ON SOCIAL MEDIA</p>
-                <ul class="socials">
-                    <li><a href=""><i class="fa-brands fa-facebook"></i></a></li>
-                    <li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
-                    <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
-                </ul>
-                <!-- closing tag r-side div -->
-            </div>
-    </div>
-   
-
-
-
-     
-    <div class="legal">
-        <p class="bottom-links"><a href="">COOKIE POLICY|</a>  <a href="" >TERMS AND CONDITIONS|</a> <a href="mailto:eastexperience@gmailo.com"> CONTACT US</a> </p>
-    </div>
-</footer>
-
-</body>
+  <?php
+  include 'footer.php';
+  ?>
