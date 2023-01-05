@@ -1,4 +1,8 @@
 <?php
+ini_set("session.save_path", "/home/unn_w22016721/sessionData");
+if (session_status() == PHP_SESSION_NONE) {
+    session_start();
+}
 include 'header.php';
 ?>
 
@@ -116,7 +120,16 @@ if(!array_filter($errors)){
        mysqli_stmt_bind_param($stmt, "ssssis", $Fname, $Lname, $email, $Username, $mobile, $hashpassword);
         mysqli_stmt_execute($stmt);
         mysqli_stmt_close($stmt);
-       //  header('location: ../PHP2/signup.php?error=none'); 
+        $_SESSION['logged-in'] = true;
+        if ($_SESSION['logged-in']) {
+            # code...
+            $_SESSION['username'] = $Username;
+            // echo "session has been set";
+            // echo $_SESSION['username'];
+            header("location: index.php");
+          
+        }
+       
        //  exit();
    
 

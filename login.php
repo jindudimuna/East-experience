@@ -11,7 +11,7 @@ include "db.php";
 
 
 $Username = $pwd = '';
-$errors = array('username' => '', 'Password' => '');
+$errors = array('wrong' => '',);
 
 
 if (isset($_POST["submit"])) {
@@ -27,7 +27,7 @@ if (isset($_POST["submit"])) {
         if (mysqli_num_rows($result) == 1 ) {
             $Username = $_POST["username"];
         } else {
-            $errors['username'] = 'incorrect username <br>';
+            $errors['wrong'] = 'username or password incorrect <br>';
  
         }
    }
@@ -53,7 +53,7 @@ if (isset($_POST["submit"])) {
             # code...
             $pwd = $_POST["Password"];
         }else{
-            $errors['Password'] = 'Incorrect Password';
+            $errors['wrong'] = 'username or password incorrect <br>';
 
         }
     }
@@ -93,16 +93,16 @@ if (isset($_POST["submit"])) {
                 <div>
                     <p class="title"> Username</p>
                     <input type="text" name="username" class="field" value="<?php echo htmlspecialchars($Username); ?>">
-                    <p class="red-text"><?php echo $errors['username'] ?></p>
                </div>
         
                <div>
                 <p class="title"> Password</p>
                 <input type="password" name="Password" class="field" value="<?php echo htmlspecialchars($pwd); ?>">
-                <p class="red-text"><?php echo $errors['Password'] ?></p>
 
            </div>
 </div>
+  <p class="red-text"><?php echo $errors['wrong'] ?></p>
+
 <div class="submit">
     <input type="submit" value="LOGIN" class="btn" name= "submit">
     <!-- closing tag for submit -->
