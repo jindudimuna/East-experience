@@ -551,3 +551,9 @@ footer {
   font-family: Roboto, sans-serif;
   font-size: 1.5em;
 }
+
+//excursion-page
+
+.excursion-list {
+  margin-top: 20%;
+}

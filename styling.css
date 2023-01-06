@@ -1,0 +1,590 @@
+/* Home page */
+
+body {
+  box-sizing: border-box;
+}
+
+.nav-bar {
+  display: flex;
+  width: 100%;
+  background-color: #a10101;
+}
+
+.Company {
+  color: #ffffff;
+  font-family: "Roboto", sans-serif;
+
+  font-weight: 100;
+  font-size: 1.1em;
+  display: flex;
+  justify-content: center;
+  margin-right: auto;
+  margin-left: 4%;
+  width: 352px;
+  text-decoration: none;
+}
+
+.nav-items {
+  display: flex;
+  list-style: none;
+  gap: 10%;
+  align-items: center;
+  font-family: "Prompt";
+  margin-left: 5%;
+}
+
+.nav-items a {
+  text-decoration: none;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 100;
+  font-size: 1em;
+}
+
+.nav-items a:hover {
+  text-decoration: underline;
+}
+
+.Hero {
+  background-image: url(./assets/Background-image.jpg);
+  /* tori gate digital wallpaper, shrine, water, mountains, clouds, HD wallpaper(2020). Available at HD wallpaper: tori gate digital wallpaper, shrine, water, mountains, clouds | Wallpaper Flare (accessed: 23 October 2022). */
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 0;
+}
+
+.Hero-welcome {
+  font-family: "Montserrat", sans-serif;
+  color: #ffffff;
+  font-size: 5em;
+  font-weight: 200;
+  width: 660px;
+  margin-top: 8%;
+}
+
+.hero-text-1 {
+  display: flex;
+
+  margin-left: 10%;
+}
+.info-text {
+  font-family: "Montserrat", sans-serif;
+  color: #ffffff;
+  font-size: 1.1em;
+  font-weight: 200;
+  width: 330px;
+  text-align: left;
+  margin-top: 18%;
+}
+
+.info-text-2 {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.2em;
+  font-weight: 500;
+  width: 430px;
+  margin-top: 22%;
+  color: #ffffff;
+}
+.info-text-2 a {
+  text-decoration: none;
+  color: #ffffff;
+}
+.info {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  margin-left: 10%;
+  margin-right: 2%;
+  margin-top: 2%;
+}
+section {
+  margin-top: 10%;
+}
+
+.banners {
+  width: 413px;
+}
+
+#destination {
+  display: flex;
+  overflow-x: auto;
+  gap: 5%;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 10%;
+}
+
+.tile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.location {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1em;
+  font-weight: 600;
+}
+
+.plans-heading {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.6em;
+  font-weight: 600;
+  text-align: center;
+  margin-top: 5%;
+}
+
+.itinery {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.3em;
+  font-weight: 500;
+  width: 250px;
+  height: 30px;
+  text-align: center;
+}
+
+.plans {
+  display: flex;
+  justify-content: center;
+  overflow-x: auto;
+  gap: 5%;
+  margin-top: 2%;
+}
+
+.btn {
+  background-color: #a10101;
+  border: 0px;
+  width: 258px;
+  height: 50px;
+  color: #ffffff;
+  margin-bottom: 5%;
+  font-size: 1em;
+}
+.btn:hover {
+  background-color: black;
+  color: #ffffff;
+}
+.link {
+  text-decoration: none;
+}
+
+.action {
+  margin-top: 5%;
+  text-align: center;
+  padding-bottom: 5%;
+}
+
+.more-info {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  padding-bottom: 5%;
+}
+.ninja {
+  width: 5%;
+}
+.find-more {
+  color: black;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.8em;
+}
+
+.footer-items a {
+  text-decoration: none;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 100;
+  font-size: 1em;
+}
+.footer-items li {
+  list-style: none;
+  margin-top: 5%;
+}
+
+.footer-items {
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+}
+
+.foot-links-1 {
+  margin-top: 10%;
+  background-color: #ef3340;
+  height: 60vh;
+}
+
+.legal {
+  display: flex;
+  justify-content: center;
+}
+.bottom-links a {
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.8em;
+  color: white;
+  text-decoration: none;
+}
+
+.r-items {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1em;
+  color: white;
+  width: 250px;
+}
+
+.field {
+  width: 67%;
+  padding-top: 6px;
+  padding-bottom: 6px;
+}
+
+.socials a {
+  text-decoration: none;
+  color: white;
+}
+
+.socials li {
+  list-style: none;
+}
+
+ul.socials {
+  display: flex;
+  gap: 2%;
+}
+
+.footer-section {
+  display: flex;
+  justify-content: space-between;
+}
+
+.l-side,
+.r-side {
+  margin-top: 5%;
+}
+
+footer {
+  background-color: #a10101;
+}
+
+.credits {
+  font-size: 0.6em;
+  color: #434040;
+}
+
+/* about page */
+
+.Hero-2 {
+  background-image: url(./assets/home-hero.jpg);
+  /* https://www.wallpaperflare.com/mount-fuji-japan-nature-mountains-landscape-scenics-nature-wallpaper-suleu/download */
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 0;
+}
+
+.Hero-welcome-2 {
+  font-family: "Montserrat", sans-serif;
+  color: #ffffff;
+  font-size: 5em;
+  font-weight: 200;
+  width: 300px;
+  margin-top: 8%;
+  text-align: right;
+}
+
+.hero-text-a {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 10%;
+}
+
+.hero-info {
+  font-family: "Montserrat", sans-serif;
+  color: #ffffff;
+  font-size: 1.2em;
+  font-weight: 500;
+  width: 300px;
+  text-align: left;
+  margin-left: 15%;
+}
+
+.hero-info-2 {
+  font-family: "Montserrat", sans-serif;
+  color: #ffffff;
+  font-size: 1em;
+  font-weight: 500;
+  width: 400px;
+  text-align: left;
+  margin-left: 15%;
+}
+
+.destination-link {
+  font-family: "Montserrat", sans-serif;
+  color: #ffffff;
+  font-size: 1.2em;
+  font-weight: 500;
+  width: 460px;
+  text-decoration: none;
+}
+
+.fa-solid {
+  color: #ffffff;
+  font-size: 1em;
+  width: 80px;
+}
+
+.hero-text-2 {
+  display: flex;
+  flex-direction: column;
+  margin-top: 5%;
+}
+
+.second {
+  margin-top: 5%;
+}
+
+.reviews-heading,
+.about-heading {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.6em;
+  font-weight: 600;
+  text-align: center;
+  margin-top: 5%;
+}
+
+#about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about-us {
+  font-family: "Montserrat", sans-serif;
+  color: black;
+  font-size: 1.6em;
+  font-weight: 200;
+  width: 760px;
+  text-align: center;
+}
+.quote-mark {
+  font-size: 3.5em;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  color: #ef3340;
+  font-style: italic;
+}
+
+.review-item {
+  width: 320px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.2em;
+  font-weight: 500;
+  margin-bottom: 15%;
+  margin-top: 2%;
+}
+
+.name {
+  font-family: "Mochiy Pop One", sans-serif;
+  font-weight: 100;
+  font-size: 0.8em;
+}
+
+#reviews-square {
+  display: flex;
+  justify-content: center;
+  overflow-x: auto;
+  gap: 10%;
+  margin-top: 2%;
+  margin-left: 2%;
+  margin-bottom: 5%;
+}
+
+.quotes {
+  box-shadow: #00000026 1.95px 1.95px 2.6px;
+}
+
+/* SIGN UP PAGE */
+
+.account {
+  font-family: "Montserrat";
+  font-size: 1.8em;
+}
+
+.create {
+  display: flex;
+  justify-content: center;
+  margin-top: 8%;
+}
+
+.field {
+  /* width: 18%; */
+  padding: 0.5% 0.5% 0.5% 1.5%;
+  height: 20%;
+  background-color: #f3f3f3;
+  border: 1px solid;
+  font-size: 1em;
+  font-family: "Montserrat";
+}
+
+.title {
+  font-family: "Montserrat";
+  margin-top: 5%;
+}
+
+.form-style {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-gap: 5px 5px 2px 5px;
+  margin-left: 15%;
+}
+.red-text {
+  color: red;
+  font-size: 1.5em;
+  text-align: center;
+  font-family: "Montserrat";
+}
+
+.line {
+  width: 70%;
+}
+
+.clause {
+  font-family: "Montserrat";
+  font-size: 1em;
+  width: 27%;
+}
+
+.clause-section {
+  display: flex;
+  justify-content: center;
+}
+
+.submit {
+  display: flex;
+  justify-content: center;
+  margin-top: 2%;
+}
+
+/* Destinations section*/
+
+.hero-3 {
+  background-image: url(./assets/destinations-cover.jpg);
+  height: 110vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 0;
+  margin-bottom: 10%;
+}
+
+.hero-welcome-3 {
+  font-family: "Montserrat", sans-serif;
+  color: #ffffff;
+  font-size: 4em;
+  font-weight: 500;
+  margin: 15% 0 0 0;
+}
+
+.hero-text-3 {
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 10%;
+}
+.login-form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  grid-gap: 5px 5px 2px 5px;
+  margin-left: 15%;
+  margin-bottom: 5%;
+}
+
+.hero-4 {
+  background-image: url(./assets/book-now-cover.jpg);
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 0;
+}
+
+.hero-welcome-4 {
+  font-family: "Montserrat", sans-serif;
+  color: #ffffff;
+  font-size: 3.4em;
+  font-weight: 500;
+  width: 32%;
+  margin: 10% 0 0 0;
+}
+
+.hero-text-4 {
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 5%;
+}
+/* booking page */
+.field-2 {
+  padding: 0.5% 0.5% 0.5% 1.5%;
+  height: 30%;
+  background-color: #f3f3f3;
+  border: 1px solid;
+  font-size: 1em;
+  font-family: "Montserrat";
+}
+
+/* details page */
+.details-message {
+  font-family: Roboto, sans-serif;
+  width: 20%;
+  font-weight: 300;
+  margin: 7% 0 0 10%;
+}
+
+.details-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  margin-top: 5%;
+}
+
+.details {
+  font-family: Roboto, sans-serif;
+  font-size: 1.5em;
+}
+
+//excursion-page
+
+a.excursion {
+  text-decoration: none;
+  color: #a10101;
+}
+
+li.description {
+  color: black;
+  width: 50%;
+  font-family: "Montserrat";
+  font-size: 1.3em;
+  list-style: none;
+  text-decoration: none;
+}
+
+.excursion-list {
+  display: flex;
+  justify-content: space-around;
+  /* align-content: center; */
+  align-items: center;
+  margin-left: 10%;
+  margin-bottom: 10%;
+}
+/* 
+li.description */
+
+.banners2 {
+  width: 413px;
+  margin-top: 10%;
+  border-radius: 3%;
+}
+.banners2:hover {
+  transform: scale(1.1);
+}
