@@ -13,17 +13,22 @@ include "db.php";
 $Username = $pwd = '';
 $errors = array('wrong' => '',);
 
-
+//check if submit was clicked
 if (isset($_POST["submit"])) {
 
+    //check if username is empty
     if (empty($_POST['username'])) {
         $errors['username'] = 'Please enter a username <br>';
         } else{
             $Username = $_POST["username"];
    
-        $sql = " SELECT userName FROM `SignUp` WHERE userName ='$Username'";
+            //query the database to look for the login string that was entered
+        $sql = " SELECT userName, UserID FROM `SignUp` WHERE userName ='$Username'";
         $result = mysqli_query($conn,$sql) or die("invalid query") ;
-    //   die(mysqli_fetch_assoc($result)['userName']);
+            if($row = mysqli_fetch_assoc($result)){
+                $userID = $row['UserID'];
+            }
+    //check if it appears once
         if (mysqli_num_rows($result) == 1 ) {
             $Username = $_POST["username"];
         } else {
@@ -31,6 +36,9 @@ if (isset($_POST["submit"])) {
  
         }
    }
+
+
+   //check if password is empty and fetch the usershashed password
 
     if (empty($_POST['Password'])) {
         $errors['Password'] = 'Password cannot be empty';
@@ -40,14 +48,10 @@ if (isset($_POST["submit"])) {
         $result = mysqli_query($conn, $sql) or die("invalid query");
         $hashedpwd = mysqli_fetch_assoc($result)['UsersPassword'];
 
-
+//compare the passwords
         $checkpwd = password_verify($pwd, $hashedpwd);
 
-        // if(mysqli_num_rows($result) == 1){
-        //     $hashpassword;
-        // } else {
-        //     $errors['Password'] = 'Incorrect Password';
-        // }
+  
 
         if ($checkpwd) {
             # code...
@@ -68,7 +72,9 @@ if (isset($_POST["submit"])) {
         if ($_SESSION['logged-in']) {
             # code...
             $_SESSION['username'] = $Username;
-            // echo "session has been set";
+            $_SESSION['userID'] = $userID;
+
+            // echo "session has beenet";
             // echo $_SESSION['username'];
             header("location: index.php");
           

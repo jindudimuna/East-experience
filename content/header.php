@@ -2,8 +2,8 @@
 ini_set("session.save_path", "/home/unn_w22016721/sessionData");
 if (session_status() == PHP_SESSION_NONE) {
     session_start();
-}
 
+}
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -13,7 +13,7 @@ if (session_status() == PHP_SESSION_NONE) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
 <!-- css -->
-    <link rel="stylesheet" type="text/css" href="./styling.css?v=<?php echo time(); ?>">
+    <link rel="stylesheet" type="text/css" href="../assets/stylesheets/styles.css ">
     <!-- Google fonts -->
  
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
@@ -29,7 +29,7 @@ if (session_status() == PHP_SESSION_NONE) {
 
         <nav class="nav-bar">
             <div class="logo">
-                <h1 ><a class="Company" href="index.html">East Experience</a></h1>
+                <h1 ><a class="Company" href="index.php">East Experience</a></h1>
                 <!-- closing tag for Company -->
             </div>
         
@@ -38,25 +38,24 @@ if (session_status() == PHP_SESSION_NONE) {
                 <ul class="nav-items">
                     <li><a href="index.php">Home</a></li>
                     <li><a href="about.php">About</a></li>
-                    <li><a href="Design-Notes.pdf" target="_blank">Wireframes</a></li>
-                    <li><a href="CREDITS.pdf">Credits</a></li>
-                    <li><a href="destinations.php">Destination</a></li>
+                    <li><a href="../assets/Design-Notes.pdf" target="_blank">Wireframes</a></li>
+                    <li><a href="../assets/CREDITS.pdf">Credits</a></li>
                     <?php 
 
                         if (isset($_SESSION['logged-in'])) {
                             # code...
-                            echo "<li><a href='book.php'>Book</a></li>";
-                            echo " <li><a href='logout.php'>Log out</a></li>";
+                            echo   "<li><a href='destinations.php'>Destination</a></li>";
+                            echo "<li><a href='Manage.php'>Manage Bookings</a></li>";
+
+                         echo "<li><a href='logout.php'>Log out</a></li>";
+                            
                         } else{
                             echo "<li><a href='signup.php'>Sign up</a></li>";
                             echo " <li><a href='login.php'>Log in</a></li>";
                         }
 
                     ?>
-                    <!-- <li><a href='signup.php'>Signup</a></li>
-                    <li><a href="login.php">login</a></li> -->
-                    <!-- <li><a href="details.html"><Details></Details></a></li> -->
-
+                  
                 </ul>
         
         

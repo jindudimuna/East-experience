@@ -91,7 +91,7 @@ if (empty($_POST['Password'])) {
 if($pwd !== $_POST['confirm-password']){
      $errors['Password'] = 'Passwords do not match<br>';
      } else{
-     $pwd = $_POST['confirm-password'];
+               $pwd = $_POST['confirm-password'];
 }
 }
 
@@ -121,13 +121,16 @@ if(!array_filter($errors)){
         mysqli_stmt_execute($stmt);
         mysqli_stmt_close($stmt);
         $_SESSION['logged-in'] = true;
+         
+          
         if ($_SESSION['logged-in']) {
             # code...
             $_SESSION['username'] = $Username;
+            header("Refresh: 1 ; url= index.php");
+
             // echo "session has been set";
             // echo $_SESSION['username'];
-            header("location: index.php");
-          
+               
         }
        
        //  exit();

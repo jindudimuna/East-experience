@@ -1,0 +1,12 @@
+Here is how I implimented the neccesary features for this site.
+
+◉ The Customer registration page is found in contents/signup.php. It was being sent to the database
+    in line 108-122
+◉ The logout feature is implemented in logout.php and it is acessed when the logout link is clicked in the navbar.
+◉ The Tourist excursuon list from the database can be found in destinations.php from line 25- 34.
+◉ The excursuon details page that shows the details of a selected excursion is found in view.php and is displayed by querying the data
+   we passed to the url on click of a view link in destinations.php. 
+◉ The booking function is in book.php and here the choices made by the user are preset except the date and comments.
+◉ The booking is confirmed and sent to the databse in view.php.
+◉ After a booking is made, it is viewed in the manage.php where the user can now delete it.
+◉ Our sessions are created on signup.php (line 126) and used to track user login by passing it in the navbar in header.php

@@ -45,9 +45,8 @@ body {
   text-decoration: underline;
 }
 
-.Hero {
-  background-image: url(./assets/Background-image.jpg);
-  /* tori gate digital wallpaper, shrine, water, mountains, clouds, HD wallpaper(2020). Available at HD wallpaper: tori gate digital wallpaper, shrine, water, mountains, clouds | Wallpaper Flare (accessed: 23 October 2022). */
+.hero {
+  background-image: url(../images/home-cover.jpg);
   height: 100vh;
   background-repeat: no-repeat;
   background-size: cover;
@@ -275,7 +274,7 @@ footer {
 /* about page */
 
 .Hero-2 {
-  background-image: url(./assets/home-hero.jpg);
+  background-image: url(../images/about-cover.jpg);
   /* https://www.wallpaperflare.com/mount-fuji-japan-nature-mountains-landscape-scenics-nature-wallpaper-suleu/download */
   height: 100vh;
   background-repeat: no-repeat;
@@ -470,11 +469,12 @@ footer {
 /* Destinations section*/
 
 .hero-3 {
-  background-image: url(./assets/destinations-cover.jpg);
+  background-image: url(../images/destinations-hero.jpg);
   height: 110vh;
   background-repeat: no-repeat;
   background-size: cover;
   margin-top: 0;
+  margin-bottom: 2%;
 }
 
 .hero-welcome-3 {
@@ -500,7 +500,7 @@ footer {
 }
 
 .hero-4 {
-  background-image: url(./assets/book-now-cover.jpg);
+  background-image: url(../images/book-cover.jpg);
   height: 100vh;
   background-repeat: no-repeat;
   background-size: cover;
@@ -521,6 +521,7 @@ footer {
   justify-content: flex-start;
   margin-left: 5%;
 }
+
 /* booking page */
 .field-2 {
   padding: 0.5% 0.5% 0.5% 1.5%;
@@ -529,6 +530,12 @@ footer {
   border: 1px solid;
   font-size: 1em;
   font-family: "Montserrat";
+}
+
+.text-area {
+  width: 45%;
+  height: 50%;
+  margin-top: 6%;
 }
 
 /* details page */
@@ -548,12 +555,83 @@ footer {
 }
 
 .details {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.5em;
+  font-weight: 800;
+}
+.details-info {
   font-family: Roboto, sans-serif;
   font-size: 1.5em;
 }
 
-//excursion-page
+a.excursion {
+  text-decoration: none;
+  color: #a10101;
+}
 
+li.description {
+  color: black;
+  width: 70%;
+  font-family: "Montserrat";
+  font-size: 3.3em;
+  list-style: none;
+  text-decoration: none;
+}
+
+li.description2 {
+  color: black;
+  width: 70%;
+  font-family: "Montserrat";
+  font-size: 1.3em;
+  list-style: none;
+  text-decoration: none;
+}
 .excursion-list {
-  margin-top: 20%;
+  display: flex;
+  justify-content: space-around;
+  /* align-content: center; */
+  align-items: center;
+  margin-left: 10%;
+  margin-bottom: 5%;
+}
+/* 
+li.description */
+
+.banners2 {
+  width: 40%;
+  margin-top: 10%;
+  border-radius: 3%;
+}
+.banners2:hover {
+  transform: scale(1.1);
+}
+
+.venue {
+  font-family: "Montserrat";
+  font-size: 1em;
+}
+.fa-location-crosshairs {
+  color: black;
+}
+
+.booking-table {
+  border: 1px solid #c0c0c0;
+  border-collapse: collapse;
+  padding: 5%;
+  width: 100%;
+  margin-top: 5%;
+}
+.booking-table th {
+  border: 1px solid #c0c0c0;
+  padding-bottom: 3%;
+  padding-top: 3%;
+  background: #f0f0f0;
+}
+.booking-table td {
+  border: 1px solid #c0c0c0;
+  width: 15%;
+  padding-top: 5%;
+}
+.booking-table tr {
+  line-height: 15%;
 }

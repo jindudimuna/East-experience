@@ -7,8 +7,8 @@
         <ul class="footer-items">
             <li><a href="">FAQ</a></li>
             <li><a href="">HISTORY</a></li>
-            <li><a href="">GALLERY</a></li>
-            <li><a href="">UPCOMING TOURS</a></li>
+            <li><a href="features.txt">FEATURES</a></li>
+            <li><a href="../assets/SECURITY-REPORT-FOR-AN-EXCURSION-WEBSITE.pdf" target="_blank">SECURITY</a></li>
             <li><a href="">COVID-19 UPDATES</a></li>
            </ul>
       <!-- closing tag for l-side div -->
